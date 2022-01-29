@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        
+        body {
+            background: rgb(122, 192, 227);
+            background: linear-gradient(180deg, rgba(122, 192, 227, 1) 73%, rgba(241, 237, 219, 1) 73%);
+
+            height: 100vh;
+        }
+
+        
+        #palm {
+            position: absolute;
+            height: 120px;
+            right: 40%;
+            bottom: 21%;
+            opacity: 0;
+            animation-name: opacities;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #people {
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            height: 150px;
+        }
+
+        #umbrella {
+            position: absolute;
+            height: 90px;
+            left: 5%;
+            bottom: 9%;
+            opacity: 0;
+            animation-name: fromLeft;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #ball {
+            position: absolute;
+            height: 100px;
+            right: 7%;
+            bottom: 9%;
+            opacity: 0;
+            animation-name: fromRight;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        #sun {
+            position: absolute;
+            height: 160px;
+            top: 3%;
+            left: 10%;
+            opacity: 0;
+            animation-name: opacities;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        .message{
+            position: absolute;
+            top: 26%;
+            left: 8%;
+            opacity: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            animation-name: opacities;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Animaciones */
+            @keyframes opacities {
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
+            @keyframes fromLeft {
+            from {opacity: 0; left: 0}
+            to {opacity: 1; left: 5%}
+            }
+            @keyframes fromRight {
+            from {opacity: 0; right: 0;}
+            to {opacity: 1; right: 7%;}
+            }
+    </style>
+</head>
+
+<body>
+    <img id="sun" src="assets/svg/ejercicio-3_sun.svg" />
+    <img id="umbrella" src="assets/svg/ejercicio-3_sun-umbrella.svg" />
+    <img id="palm" src="assets/svg/ejercicio-3_palm-tree.svg" />
+    <img id="ball" src="assets/svg/ejercicio-3_beach-ball.svg" />
+    <img id="people" src="assets/svg/ejercicio-3_people.svg" />
+    <div class="message">
+        <h1>Vive el verano</h1>
+        <p>Con la protección del bloqueador solar número 1 de Chile podrás tener un verano protegido junto a toda tu
+            familia.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(113,151,224);
+            background: linear-gradient(90deg, rgba(113,151,224,1) 0%, rgba(200,96,133,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        height: 100vh;        }
+
+            button {
+            font-family: 'Lucida Console';
+            background-color: rgba(61,70,81,1);
+            color: white;
+            border: 1px solid rgba(61,70,81,1);
+            padding: 40px 90px;
+            font-size: larger;
+            transition-property: box-shadow, transform, background-color;
+            transition-duration: .25s, .25s;
+            transition-timing-function: linear, ease-in;
+            }
+            button:hover{
+                background-color: rgba(61,70,81,.2);
+                border: 1px solid white;
+                transform: translateX(3px) translateY(3px);
+                -webkit-box-shadow: -6px 6px 11px -8px #000000; 
+                box-shadow: -6px 6px 11px -8px #000000;
+            }
+    </style>
+</head>
+<body>
+    <button>Conocer más</button>
+</body>
+</html>
